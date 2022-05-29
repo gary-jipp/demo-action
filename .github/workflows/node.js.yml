@@ -25,7 +25,6 @@ jobs:
           git fetch
           git checkout -b build
           echo 'git pull origin build'
-          git pull origin build
           echo 'git merge master'
           git merge master
           echo 'git push origin build'
