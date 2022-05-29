@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Copy to build
-    - run:  git config pull.rebase true
-    - run:  git checkout -b build
-    - run:  git merge master
-    - run:  git push origin build
+      - run:  git config pull.rebase true
+      - run:  git checkout -b build
+      - run:  git merge master
+      - run:  git push origin build
