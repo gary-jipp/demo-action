@@ -30,3 +30,4 @@ jobs:
           git merge master
           echo 'git push origin build'
           git push origin build
+          echo 'done!'
