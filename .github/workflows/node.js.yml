@@ -5,13 +5,12 @@ name: Demo Testing CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,10 +18,11 @@ jobs:
         node-version: [16.x]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Copy to build
-      run: |
-        ls -al
-        git fetch
-        git checkout -b build
-        git merge master
+      - uses: actions/checkout@v3
+      - name: Copy to build
+        run: |
+          ls -al
+          git fetch
+          git checkout -b build
+          git pull
+          git merge master
