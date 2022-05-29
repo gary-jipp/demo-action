@@ -23,6 +23,7 @@ jobs:
         run: |
           ls -al
           git fetch
+          echo 'checkout -b build'
           git checkout -b build
           echo 'git pull origin build'
           echo 'git merge master'
