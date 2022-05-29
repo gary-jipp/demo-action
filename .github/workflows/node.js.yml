@@ -23,5 +23,5 @@ jobs:
     - name: Copy to build
       run: |
         git fetch
-        git checkout build
+        git checkout -B build
         git merge master
